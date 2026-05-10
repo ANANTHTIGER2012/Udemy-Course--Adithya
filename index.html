@@ -1,14 +1,38 @@
-﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fighting Game</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScript Game Starter Kit</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <canvas id="gameCanvas"></canvas>
-  <script type="module" src="js/main.js"></script>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Main Menu -->
+         <div id="mainMenu" class="ui-panel">
+            <h1>Game Starter Kit</h1>
+            <button id="playBtn">Play</button>
+            <div style="margin-top: 20px; font-size: 12px;">
+                <div>WASD - Move</div>
+                <div>ESC - Pause</div>
+            </div>
+        </div>
+        <!-- Pause Menu -->
+        <div id="pauseMenu" class="ui-panel">
+            <h2>PAUSED</h2>
+            <button id="resumeBtn">RESUME</button>
+            <button id="quitBtn">QUIT TO MENU</button>
+        </div>
+        <!-- Loading Screen -->
+         <div id="loadingScreen" class="ui-panel active">
+            <h2>Loading...</h2>
+            <p>Sharpening the pixels...</p>
+         </div>
+
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
